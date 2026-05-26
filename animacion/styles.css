@@ -1,0 +1,136 @@
+*{
+    font-family: cursive;
+}
+.boto{
+       width: fit-content;
+    padding: 6px 30px;
+    border: none;
+    background-color: chartreuse;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+.boto:hover{
+    background-color: rgb(124, 132, 184);
+    box-shadow: 5px 5px rgb(222, 135, 135)
+   
+}
+.icon{
+    display: inline-block;
+}
+button:hover .icon{
+    animation: spinner 1s linear infinite;
+}
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+header{
+    border-radius: 20px;
+    background-color: rgb(0, 255, 213);
+    text-align: center;
+}
+main{
+    border-radius: 20px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.tarjeta{
+    border-radius:30px; 
+display: inline-block;
+padding: 10px;
+    background-color: crimson;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(red, green, blue, alpha);
+    background-color: rgb(22, 175, 104);
+    box-shadow: 5px 5px rgb(135, 183, 222)
+  }
+  .panel{
+    padding: 30px;
+    background: #c0b7b7;
+    border-radius: 50px;
+}
+
+.caja{
+    width: 100px;
+    height: 50px;
+    margin: 10px 0;
+    background: rgb(112, 117, 34);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+.panel:hover .caja{
+    transform: translateX(200px);
+}
+.caja1{
+    transition-timing-function: linear;
+}
+
+.caja2{
+    transition-timing-function: ease-in;
+}
+
+.caja3{
+    transition-timing-function: ease-out;
+}
+/*separacion felis*/
+.loader{
+    display: inline-block;
+    background-color: aliceblue;
+    animation: girar 1s linear infinite;
+    border-radius: 500px;
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.bot{
+    width: fit-content;
+    padding: 6px 30px;
+    border: none;
+    background-color: rgb(22, 192, 135);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s, box-sh;
+ 
+}
+
+.bot:hover{
+    background-color: rgb(84, 101, 216);
+    box-shadow: 5px 5px rgb(150, 18, 18);
+    animation: energia 1s ease;
+}
+
+@keyframes energia {
+    0% {
+        transform: translateX(200px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(100px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateX(20px) rotate(360deg);
+    }
+}
